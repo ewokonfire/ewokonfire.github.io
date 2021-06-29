@@ -4,19 +4,19 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/pygments.css">
     <link rel="shortcut icon" href="/favicon.ico">
-    <title>index - mathlib docs</title>
+    <title>non_mathlib.cubic - mathlib docs</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The Lean mathematical library, mathlib, is a community-driven effort to build a unified library of mathematics formalized in the Lean proof assistant." />
+    <meta name="description" content="" />
 
-    <meta name="og:title" content="index - mathlib docs">
+    <meta name="og:title" content="non_mathlib.cubic - mathlib docs">
     <meta name="og:site_name" content="mathlib for Lean - API documentation">
-    <meta name="og:description" content="The Lean mathematical library, mathlib, is a community-driven effort to build a unified library of mathematics formalized in the Lean proof assistant.">
+    <meta name="og:description" content="">
     <meta name="og:image" content="/meta-og.png">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="index - mathlib docs">
-    <meta name="twitter:description" content="The Lean mathematical library, mathlib, is a community-driven effort to build a unified library of mathematics formalized in the Lean proof assistant.">
+    <meta name="twitter:title" content="non_mathlib.cubic - mathlib docs">
+    <meta name="twitter:description" content="">
     <meta name="twitter:image" content="/meta-twitter.png">
 </head>
 
@@ -27,7 +27,7 @@
 <header>
     <h1><label for="nav_toggle"></label><a href="https://leanprover-community.github.io">mathlib</a>
         <span>documentation</span></h1>
-    <p class="header_filename break_within">index</p>
+    <p class="header_filename break_within"><span class="name">non_mathlib</span>.<span class="name">cubic</span></p>
     <form action="https://google.com/search" method="get" id="search_form">
         <input type="hidden" name="sitesearch" value="https://leanprover-community.github.io/mathlib_docs">
         <input type="text" name="q" autocomplete="off">
@@ -35,25 +35,2148 @@
     </form>
 </header>
 
-<nav class="internal_nav"></nav>
+<nav class="internal_nav">
+<h3><a class="break_within" href="#top"><span class="name">non_mathlib</span>.<span class="name">cubic</span></a></h3>
+
+<p class="gh_nav_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean">source</a></p>
+
+<div class="imports">
+    <details>
+        <summary>Imports</summary>
+        <ul>
+            <li><a href="/init/default.html">
+                init.default</a></li>
+        
+            <li><a href="/non_mathlib/field.html">
+                non_mathlib.field</a></li>
+        </ul>
+    </details>
+    <details>
+        <summary>Imported by</summary>
+        <ul>
+            <li><a href="/non_mathlib/quartic.html">
+                non_mathlib.quartic</a></li>
+        </ul>
+    </details>
+</div>
+
+
+    <div class="nav_link"><a class="break_within" href="#cardano_den_not_zero_general"><span class="name">cardano_den_not_zero_general</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_den_not_zero_int"><span class="name">cardano_den_not_zero_int</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_den_not_zero_int_alt"><span class="name">cardano_den_not_zero_int_alt</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_denominator_not_zero"><span class="name">cardano_denominator_not_zero</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_formula"><span class="name">cardano_formula</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_formula_a"><span class="name">cardano_formula_a</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_formula_b"><span class="name">cardano_formula_b</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_formula_c"><span class="name">cardano_formula_c</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_formula_uniqueness"><span class="name">cardano_formula_uniqueness</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_formulae_sum_zero"><span class="name">cardano_formulae_sum_zero</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_intermediate_val"><span class="name">cardano_intermediate_val</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_other_int_val"><span class="name">cardano_other_int_val</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_product"><span class="name">cardano_product</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_product_helper"><span class="name">cardano_product_helper</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_products"><span class="name">cardano_products</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cardano_works"><span class="name">cardano_works</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cube_roots_sum_zero"><span class="name">cube_roots_sum_zero</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#depressed_cubic_equal_split"><span class="name">depressed_cubic_equal_split</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#depressed_cubic_factorize"><span class="name">depressed_cubic_factorize</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#depressed_cubic_solution_c_zero"><span class="name">depressed_cubic_solution_c_zero</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#depressed_cubic_solution_c_zero_a"><span class="name">depressed_cubic_solution_c_zero_a</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#depressed_cubic_solution_c_zero_b"><span class="name">depressed_cubic_solution_c_zero_b</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#depressed_cubic_solution_c_zero_c"><span class="name">depressed_cubic_solution_c_zero_c</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#depressed_cubic_solution_c_zero_correct"><span class="name">depressed_cubic_solution_c_zero_correct</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#depressed_cubic_subst"><span class="name">depressed_cubic_subst</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#divide_cubic_through"><span class="name">divide_cubic_through</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#helper_bcubed"><span class="name">helper_bcubed</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#helper_twothirds"><span class="name">helper_twothirds</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#int_quantity_eq_zero_simp"><span class="name">int_quantity_eq_zero_simp</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#int_quantity_ne_zero_simp"><span class="name">int_quantity_ne_zero_simp</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cubic_formula_a"><span class="name">cubic_formula_a</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cubic_formula_a_alt"><span class="name">cubic_formula_a_alt</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cubic_formula_a_alt_correct"><span class="name">cubic_formula_a_alt_correct</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cubic_formula_a_correct"><span class="name">cubic_formula_a_correct</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cubic_formula_alt_uniqueness"><span class="name">cubic_formula_alt_uniqueness</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cubic_formula_b"><span class="name">cubic_formula_b</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cubic_formula_b_alt"><span class="name">cubic_formula_b_alt</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cubic_formula_b_correct"><span class="name">cubic_formula_b_correct</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cubic_formula_c"><span class="name">cubic_formula_c</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cubic_formula_c_alt"><span class="name">cubic_formula_c_alt</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cubic_formula_c_correct"><span class="name">cubic_formula_c_correct</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cubic_formula_uniqueness"><span class="name">cubic_formula_uniqueness</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#cubic_subst"><span class="name">cubic_subst</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#reduce_cubic_to_depressed"><span class="name">reduce_cubic_to_depressed</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#third"><span class="name">third</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#twenty_seventh"><span class="name">twenty_seventh</span></a></div>
+
+</nav>
 
 <main>
     <a id="top"></a>
     
-<p>Navigate through mathlib files using the menu on the left.</p>
 
-<p>Declaration names link to their locations in the mathlib or core Lean source.
-Names inside code snippets link to their locations in this documentation.</p>
+    
+        
+        
+<div class="decl" id="cardano_intermediate_val">
+<div class="def">
 
-<p>This documentation has been generated with mathlib commit
-<a href="https://github.com/leanprover-community/mathlib/tree/68d7d001186d7a4b2a8f6de0ca49a6f43e15ea95">68d7d001186d7a4b2a8f6de0ca49a6f43e15ea95</a>
-and Lean commit <a href="https://github.com/leanprover-community/lean/blob/a5822ea47ebc52eec6323d8f1b60f6ec025daf99/library">a5822ea47ebc52eec6323d8f1b60f6ec025daf99</a>.</p>
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L3">source</a></div>
 
-<p>Note: mathlib is still only partially documented, and this HTML display is still
-under development. We welcome pull requests on <a
-href="https://github.com/leanprover-community/doc-gen">GitHub</a> to update
-misleading or badly formatted doc strings, or to add missing
-documentation.</p>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_intermediate_val"><span class="name">cardano_intermediate_val</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cardano_intermediate_val">cardano_intermediate_val</a> f</span> c</span> d</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"> <a href="/non_mathlib/field.html#fld_with_sqrt.sqrt" title="fld_with_sqrt.sqrt">sqroot</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#square">square</a> f</span> d)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> <span class="fn">(<a href="/non_mathlib/field.html#four">four</a> f)</span></span> _)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#cubed">cubed</a> f</span> c)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> <span class="fn">(<a href="/non_mathlib/field.html#twenty_seven">twenty_seven</a> f)</span></span> _))</span></span></span></span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_other_int_val">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L7">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_other_int_val"><span class="name">cardano_other_int_val</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(d : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cardano_other_int_val">cardano_other_int_val</a> f</span> d</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(d <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> <span class="fn">(<a href="/non_mathlib/field.html#two">two</a> f)</span></span> <a href="/non_mathlib/field.html#fld_not_char_two.not_char_two">fld_not_char_two.not_char_two</a>))</span></span></span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_den_not_zero_general">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L14">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_den_not_zero_general"><span class="name">cardano_den_not_zero_general</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_intermediate_val">cardano_intermediate_val</a> f</span> c</span> d))</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_other_int_val">cardano_other_int_val</a> f</span> d))</span></span></span></span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_den_not_zero_int">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L39">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_den_not_zero_int"><span class="name">cardano_den_not_zero_int</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_intermediate_val">cardano_intermediate_val</a> f</span> c</span> d)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_other_int_val">cardano_other_int_val</a> f</span> d)</span></span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_den_not_zero_int_alt">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L51">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_den_not_zero_int_alt"><span class="name">cardano_den_not_zero_int_alt</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_intermediate_val">cardano_intermediate_val</a> f</span> c</span> d)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_other_int_val">cardano_other_int_val</a> f</span> d)</span></span></span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_denominator_not_zero">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L63">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_denominator_not_zero"><span class="name">cardano_denominator_not_zero</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(cubrt_func : f → f)</span></span>
+    <span class="decl_args"><span class="fn">(cubrt_func_nonzero : ∀ (x : f), <span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span> → <span class="fn"><span class="fn">cubrt_func x</span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></span>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn">(cubrt_func <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_intermediate_val">cardano_intermediate_val</a> f</span> c</span> d)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_other_int_val">cardano_other_int_val</a> f</span> d))</span></span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span></span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_formula">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L75">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_formula"><span class="name">cardano_formula</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(cubrt_func : f → f)</span></span>
+    <span class="decl_args"><span class="fn">(cubrt_func_nonzero : ∀ (x : f), <span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span> → <span class="fn"><span class="fn">cubrt_func x</span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></span>)</span></span>
+    <span class="decl_args"><span class="fn">(cubrt_func_correct : ∀ (x : f), <span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/field.html#cubed">cubed</a> f</span> <span class="fn">(cubrt_func x)</span></span> <a href="/init/core.html#eq" title="eq">=</a> x</span>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cardano_formula">cardano_formula</a> f</span> c</span> d</span> c_ne_zero</span> cubrt_func</span> cubrt_func_nonzero</span> cubrt_func_correct</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn">(cubrt_func <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_intermediate_val">cardano_intermediate_val</a> f</span> c</span> d)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_other_int_val">cardano_other_int_val</a> f</span> d))</span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> <span class="fn"><span class="fn">(cubrt_func <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_intermediate_val">cardano_intermediate_val</a> f</span> c</span> d)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_other_int_val">cardano_other_int_val</a> f</span> d))</span></span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span></span></span> _))</span></span></span></span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="depressed_cubic_subst">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L81">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#depressed_cubic_subst"><span class="name">depressed_cubic_subst</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d x : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_subst">depressed_cubic_subst</a> f</span> c</span> d</span> x</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#cubed">cubed</a> f</span> x)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> x</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> d)</span></span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_works">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L86">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_works"><span class="name">cardano_works</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(cubrt_func : f → f)</span></span>
+    <span class="decl_args"><span class="fn">(cubrt_func_nonzero : ∀ (x : f), <span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span> → <span class="fn"><span class="fn">cubrt_func x</span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></span>)</span></span>
+    <span class="decl_args"><span class="fn">(cubrt_func_correct : ∀ (x : f), <span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/field.html#cubed">cubed</a> f</span> <span class="fn">(cubrt_func x)</span></span> <a href="/init/core.html#eq" title="eq">=</a> x</span>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_subst">depressed_cubic_subst</a> f</span> c</span> d</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula">cardano_formula</a> f</span> c</span> d</span> c_ne_zero</span> cubrt_func</span> cubrt_func_nonzero</span> cubrt_func_correct)</span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_formula_a">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L206">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_formula_a"><span class="name">cardano_formula_a</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cardano_formula_a">cardano_formula_a</a> f</span> c</span> d</span> c_ne_zero</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cardano_formula">cardano_formula</a> f</span> c</span> d</span> c_ne_zero</span> <a href="/non_mathlib/field.html#fld_with_cube_root.cubrt">fld_with_cube_root.cubrt</a></span> _</span> _</span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_formula_b">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L210">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_formula_b"><span class="name">cardano_formula_b</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cardano_formula_b">cardano_formula_b</a> f</span> c</span> d</span> c_ne_zero</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cardano_formula">cardano_formula</a> f</span> c</span> d</span> c_ne_zero</span> <span class="fn">(<a href="/non_mathlib/field.html#alt_cubrt_a">alt_cubrt_a</a> f)</span></span> _</span> _</span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_formula_c">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L214">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_formula_c"><span class="name">cardano_formula_c</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cardano_formula_c">cardano_formula_c</a> f</span> c</span> d</span> c_ne_zero</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cardano_formula">cardano_formula</a> f</span> c</span> d</span> c_ne_zero</span> <span class="fn">(<a href="/non_mathlib/field.html#alt_cubrt_b">alt_cubrt_b</a> f)</span></span> _</span> _</span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="depressed_cubic_solution_c_zero">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L221">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero"><span class="name">depressed_cubic_solution_c_zero</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_eq_zero : c <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(cubrt_func : f → f)</span></span>
+    <span class="decl_args"><span class="fn">(cubrt_func_correct : ∀ (x : f), <span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/field.html#cubed">cubed</a> f</span> <span class="fn">(cubrt_func x)</span></span> <a href="/init/core.html#eq" title="eq">=</a> x</span>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero">depressed_cubic_solution_c_zero</a> f</span> c</span> d</span> c_eq_zero</span> cubrt_func</span> cubrt_func_correct</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(cubrt_func d)</span></span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="depressed_cubic_solution_c_zero_correct">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L226">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero_correct"><span class="name">depressed_cubic_solution_c_zero_correct</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_eq_zero : c <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(cubrt_func : f → f)</span></span>
+    <span class="decl_args"><span class="fn">(cubrt_func_correct : ∀ (x : f), <span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/field.html#cubed">cubed</a> f</span> <span class="fn">(cubrt_func x)</span></span> <a href="/init/core.html#eq" title="eq">=</a> x</span>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_subst">depressed_cubic_subst</a> f</span> c</span> d</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero">depressed_cubic_solution_c_zero</a> f</span> c</span> d</span> c_eq_zero</span> cubrt_func</span> cubrt_func_correct)</span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="depressed_cubic_solution_c_zero_a">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L241">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero_a"><span class="name">depressed_cubic_solution_c_zero_a</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_eq_zero : c <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero_a">depressed_cubic_solution_c_zero_a</a> f</span> c</span> d</span> c_eq_zero</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero">depressed_cubic_solution_c_zero</a> f</span> c</span> d</span> c_eq_zero</span> <a href="/non_mathlib/field.html#fld_with_cube_root.cubrt">fld_with_cube_root.cubrt</a></span> _</span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="depressed_cubic_solution_c_zero_b">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L245">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero_b"><span class="name">depressed_cubic_solution_c_zero_b</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_eq_zero : c <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero_b">depressed_cubic_solution_c_zero_b</a> f</span> c</span> d</span> c_eq_zero</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero">depressed_cubic_solution_c_zero</a> f</span> c</span> d</span> c_eq_zero</span> <span class="fn">(<a href="/non_mathlib/field.html#alt_cubrt_a">alt_cubrt_a</a> f)</span></span> _</span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="depressed_cubic_solution_c_zero_c">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L249">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero_c"><span class="name">depressed_cubic_solution_c_zero_c</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_eq_zero : c <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero_c">depressed_cubic_solution_c_zero_c</a> f</span> c</span> d</span> c_eq_zero</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero">depressed_cubic_solution_c_zero</a> f</span> c</span> d</span> c_eq_zero</span> <span class="fn">(<a href="/non_mathlib/field.html#alt_cubrt_b">alt_cubrt_b</a> f)</span></span> _</span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cubic_subst">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L260">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cubic_subst"><span class="name">cubic_subst</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a b c d x : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_subst">cubic_subst</a> f</span> a</span> b</span> c</span> d</span> x</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn">a <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#cubed">cubed</a> f</span> x)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> x)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> x</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> d))</span></span></span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="divide_cubic_through">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L265">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#divide_cubic_through"><span class="name">divide_cubic_through</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a b c d x : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_subst">cubic_subst</a> f</span> a</span> b</span> c</span> d</span> x</span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span> <a href="/init/logic.html#iff" title="iff">↔</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_subst">cubic_subst</a> f</span> <a href="/non_mathlib/field.html#myfld.one">myfld.one</a></span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span></span> <span class="fn">c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span></span> <span class="fn">d <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span></span> x</span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="third">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L298">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#third"><span class="name">third</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#third">third</a> f</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> <span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span></span> <a href="/non_mathlib/field.html#fld_not_char_three.not_char_three">fld_not_char_three.not_char_three</a></span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="twenty_seventh">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L301">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#twenty_seventh"><span class="name">twenty_seventh</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#twenty_seventh">twenty_seventh</a> f</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> <span class="fn">(<a href="/non_mathlib/field.html#twenty_seven">twenty_seven</a> f)</span></span> _</span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="depressed_cubic_equal_split">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L305">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#depressed_cubic_equal_split"><span class="name">depressed_cubic_equal_split</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c1 d1 c2 d2 x : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn">c1 <a href="/init/core.html#eq" title="eq">=</a> c2</span> <a href="/init/core.html#and" title="and">∧</a> <span class="fn">d1 <a href="/init/core.html#eq" title="eq">=</a> d2</span></span> → <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_subst">depressed_cubic_subst</a> f</span> c1</span> d1</span> x</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_subst">depressed_cubic_subst</a> f</span> c2</span> d2</span> x</span></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="helper_bcubed">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L313">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#helper_bcubed"><span class="name">helper_bcubed</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(b : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">((<a href="/non_mathlib/cubic.html#third">third</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">((<a href="/non_mathlib/cubic.html#third">third</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> b)))</span></span></span></span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> <span class="fn">(<a href="/non_mathlib/field.html#twenty_seven">twenty_seven</a> f)</span></span> _)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> b</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> b))</span></span></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="helper_twothirds">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L326">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#helper_twothirds"><span class="name">helper_twothirds</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <a href="/non_mathlib/field.html#myfld.one">myfld.one</a></span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f)</span></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="reduce_cubic_to_depressed">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L342">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#reduce_cubic_to_depressed"><span class="name">reduce_cubic_to_depressed</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(b c d x y : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn">x <a href="/init/core.html#eq" title="eq">=</a> <span class="fn">y <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f))</span></span></span></span></span> → <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_subst">cubic_subst</a> f</span> <a href="/non_mathlib/field.html#myfld.one">myfld.one</a></span> b</span> c</span> d</span> x</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_subst">depressed_cubic_subst</a> f</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f)</span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> c</span></span> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#twenty_seventh">twenty_seventh</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#two">two</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#cubed">cubed</a> f</span> b)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#nine">nine</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c))</span></span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#twenty_seven">twenty_seven</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> d)</span></span></span></span> y</span></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="int_quantity_ne_zero_simp">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L472">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#int_quantity_ne_zero_simp"><span class="name">int_quantity_ne_zero_simp</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a1 b c : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a1 <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a1 <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span> → <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a1</span> a_ne_zero))</span></span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f)</span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn">c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a1</span> a_ne_zero)</span></span></span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cubic_formula_a">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L492">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cubic_formula_a"><span class="name">cubic_formula_a</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a b c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(int_quantity_ne_zero : <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_formula_a">cubic_formula_a</a> f</span> a</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_ne_zero</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_a">cardano_formula_a</a> f</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))</span></span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f)</span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn">c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span></span></span> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#twenty_seventh">twenty_seventh</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#two">two</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#cubed">cubed</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))</span></span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#nine">nine</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))))</span></span></span></span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#twenty_seven">twenty_seven</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(d <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)))</span></span></span></span></span></span> _)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f))</span></span></span></span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cubic_formula_a_correct">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L496">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cubic_formula_a_correct"><span class="name">cubic_formula_a_correct</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a b c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(int_quantity_ne_zero : <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_subst">cubic_subst</a> f</span> a</span> b</span> c</span> d</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cubic_formula_a">cubic_formula_a</a> f</span> a</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_ne_zero)</span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cubic_formula_b">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L513">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cubic_formula_b"><span class="name">cubic_formula_b</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a b c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(int_quantity_ne_zero : <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_formula_b">cubic_formula_b</a> f</span> a</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_ne_zero</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_b">cardano_formula_b</a> f</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))</span></span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f)</span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn">c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span></span></span> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#twenty_seventh">twenty_seventh</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#two">two</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#cubed">cubed</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))</span></span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#nine">nine</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))))</span></span></span></span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#twenty_seven">twenty_seven</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(d <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)))</span></span></span></span></span></span> _)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f))</span></span></span></span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cubic_formula_b_correct">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L517">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cubic_formula_b_correct"><span class="name">cubic_formula_b_correct</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a b c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(int_quantity_ne_zero : <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_subst">cubic_subst</a> f</span> a</span> b</span> c</span> d</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cubic_formula_b">cubic_formula_b</a> f</span> a</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_ne_zero)</span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cubic_formula_c">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L534">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cubic_formula_c"><span class="name">cubic_formula_c</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a b c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(int_quantity_ne_zero : <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_formula_c">cubic_formula_c</a> f</span> a</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_ne_zero</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_c">cardano_formula_c</a> f</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))</span></span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f)</span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn">c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span></span></span> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#twenty_seventh">twenty_seventh</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#two">two</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#cubed">cubed</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))</span></span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#nine">nine</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))))</span></span></span></span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#twenty_seven">twenty_seven</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(d <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)))</span></span></span></span></span></span> _)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f))</span></span></span></span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cubic_formula_c_correct">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L538">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cubic_formula_c_correct"><span class="name">cubic_formula_c_correct</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a b c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(int_quantity_ne_zero : <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_subst">cubic_subst</a> f</span> a</span> b</span> c</span> d</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cubic_formula_c">cubic_formula_c</a> f</span> a</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_ne_zero)</span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="int_quantity_eq_zero_simp">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L555">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#int_quantity_eq_zero_simp"><span class="name">int_quantity_eq_zero_simp</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a1 b c : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a1 <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a1 <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span> → <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a1</span> a_ne_zero))</span></span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f)</span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn">c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a1</span> a_ne_zero)</span></span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cubic_formula_a_alt">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L575">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cubic_formula_a_alt"><span class="name">cubic_formula_a_alt</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a b c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(int_quantity_eq_zero : <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_formula_a_alt">cubic_formula_a_alt</a> f</span> a</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_eq_zero</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero_a">depressed_cubic_solution_c_zero_a</a> f</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))</span></span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f)</span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn">c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span></span></span> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#twenty_seventh">twenty_seventh</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#two">two</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#cubed">cubed</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))</span></span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#nine">nine</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))))</span></span></span></span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#twenty_seven">twenty_seven</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(d <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)))</span></span></span></span></span></span> _)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f))</span></span></span></span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cubic_formula_a_alt_correct">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L579">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cubic_formula_a_alt_correct"><span class="name">cubic_formula_a_alt_correct</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a b c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(int_quantity_eq_zero : <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_subst">cubic_subst</a> f</span> a</span> b</span> c</span> d</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cubic_formula_a_alt">cubic_formula_a_alt</a> f</span> a</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_eq_zero)</span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cubic_formula_b_alt">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L594">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cubic_formula_b_alt"><span class="name">cubic_formula_b_alt</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a b c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(int_quantity_eq_zero : <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_formula_b_alt">cubic_formula_b_alt</a> f</span> a</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_eq_zero</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero_b">depressed_cubic_solution_c_zero_b</a> f</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))</span></span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f)</span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn">c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span></span></span> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#twenty_seventh">twenty_seventh</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#two">two</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#cubed">cubed</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))</span></span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#nine">nine</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))))</span></span></span></span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#twenty_seven">twenty_seven</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(d <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)))</span></span></span></span></span></span> _)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f))</span></span></span></span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cubic_formula_c_alt">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L598">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cubic_formula_c_alt"><span class="name">cubic_formula_c_alt</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a b c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(int_quantity_eq_zero : <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_formula_c_alt">cubic_formula_c_alt</a> f</span> a</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_eq_zero</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#depressed_cubic_solution_c_zero_c">depressed_cubic_solution_c_zero_c</a> f</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))</span></span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f)</span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn">c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span></span></span> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#twenty_seventh">twenty_seventh</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#two">two</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#cubed">cubed</a> f</span> <span class="fn">b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))</span></span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#nine">nine</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero))))</span></span></span></span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#twenty_seven">twenty_seven</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(d <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)))</span></span></span></span></span></span> _)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(b <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> a</span> a_ne_zero)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(<a href="/non_mathlib/cubic.html#third">third</a> f))</span></span></span></span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cube_roots_sum_zero">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L608">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cube_roots_sum_zero"><span class="name">cube_roots_sum_zero</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#fld_with_cube_root.cubrt">fld_with_cube_root.cubrt</a> x)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#alt_cubrt_a">alt_cubrt_a</a> f</span> x)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#alt_cubrt_b">alt_cubrt_b</a> f</span> x))</span></span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_formulae_sum_zero">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L631">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_formulae_sum_zero"><span class="name">cardano_formulae_sum_zero</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_a">cardano_formula_a</a> f</span> c</span> d</span> c_ne_zero)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">((<a href="/non_mathlib/cubic.html#cardano_formula_b">cardano_formula_b</a> f</span> c</span> d</span> c_ne_zero)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_c">cardano_formula_c</a> f</span> c</span> d</span> c_ne_zero))</span></span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_products">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L705">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_products"><span class="name">cardano_products</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d x : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_a">cardano_formula_a</a> f</span> c</span> d</span> c_ne_zero)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_b">cardano_formula_b</a> f</span> c</span> d</span> c_ne_zero)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_a">cardano_formula_a</a> f</span> c</span> d</span> c_ne_zero)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_c">cardano_formula_c</a> f</span> c</span> d</span> c_ne_zero)</span></span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_b">cardano_formula_b</a> f</span> c</span> d</span> c_ne_zero)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_c">cardano_formula_c</a> f</span> c</span> d</span> c_ne_zero)</span></span></span> <a href="/init/core.html#eq" title="eq">=</a> c</span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_product_helper">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L911">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_product_helper"><span class="name">cardano_product_helper</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_intermediate_val">cardano_intermediate_val</a> f</span> c</span> d)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_other_int_val">cardano_other_int_val</a> f</span> d)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_intermediate_val">cardano_intermediate_val</a> f</span> c</span> d)</span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_other_int_val">cardano_other_int_val</a> f</span> d)</span></span></span> _)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#myfld.reciprocal">myfld.reciprocal</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">((<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f))</span></span></span></span> _)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(c <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span></span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> d</span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_product">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L973">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_product"><span class="name">cardano_product</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_a">cardano_formula_a</a> f</span> c</span> d</span> c_ne_zero)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn">((<a href="/non_mathlib/cubic.html#cardano_formula_b">cardano_formula_b</a> f</span> c</span> d</span> c_ne_zero)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_c">cardano_formula_c</a> f</span> c</span> d</span> c_ne_zero))</span></span></span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> d</span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="depressed_cubic_factorize">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L1183">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#depressed_cubic_factorize"><span class="name">depressed_cubic_factorize</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d x : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_subst">depressed_cubic_subst</a> f</span> c</span> d</span> x</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/field.html#factorized_cubic_expression">factorized_cubic_expression</a> f</span> x</span> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_a">cardano_formula_a</a> f</span> c</span> d</span> c_ne_zero)</span></span> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_b">cardano_formula_b</a> f</span> c</span> d</span> c_ne_zero)</span></span> <span class="fn"><span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/cubic.html#cardano_formula_c">cardano_formula_c</a> f</span> c</span> d</span> c_ne_zero)</span></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cardano_formula_uniqueness">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L1200">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cardano_formula_uniqueness"><span class="name">cardano_formula_uniqueness</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(c d x : f)</span></span>
+    <span class="decl_args"><span class="fn">(c_ne_zero : c <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cardano_formula_a">cardano_formula_a</a> f</span> c</span> d</span> c_ne_zero</span></span> → <span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cardano_formula_b">cardano_formula_b</a> f</span> c</span> d</span> c_ne_zero</span></span> → <span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cardano_formula_c">cardano_formula_c</a> f</span> c</span> d</span> c_ne_zero</span></span> → <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#depressed_cubic_subst">depressed_cubic_subst</a> f</span> c</span> d</span> x</span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></span></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cubic_formula_uniqueness">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L1224">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cubic_formula_uniqueness"><span class="name">cubic_formula_uniqueness</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a1 b c d x : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a1 <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(int_quantity_ne_zero : <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a1 <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_formula_a">cubic_formula_a</a> f</span> a1</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_ne_zero</span></span> → <span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_formula_b">cubic_formula_b</a> f</span> a1</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_ne_zero</span></span> → <span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_formula_c">cubic_formula_c</a> f</span> a1</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_ne_zero</span></span> → <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_subst">cubic_subst</a> f</span> a1</span> b</span> c</span> d</span> x</span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></span></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="cubic_formula_alt_uniqueness">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/cubic.lean#L1253">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/cubic.html#cubic_formula_alt_uniqueness"><span class="name">cubic_formula_alt_uniqueness</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#myfld">myfld</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_sqrt">fld_with_sqrt</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_with_cube_root">fld_with_cube_root</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_two">fld_not_char_two</a> f]</span></span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field.html#fld_not_char_three">fld_not_char_three</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(a1 b c d x : f)</span></span>
+    <span class="decl_args"><span class="fn">(a_ne_zero : a1 <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>
+    <span class="decl_args"><span class="fn">(int_quantity_eq_zero : <span class="fn"><span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#three">three</a> f)</span> <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(a1 <a href="/non_mathlib/field.html#myfld.mul" title="myfld.mul">.*</a> c)</span></span> <a href="/non_mathlib/field.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field.html#myfld.negate" title="myfld.negate">.-</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field.html#square">square</a> f</span> b)</span></span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_formula_a_alt">cubic_formula_a_alt</a> f</span> a1</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_eq_zero</span></span> → <span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_formula_b_alt">cubic_formula_b_alt</a> f</span> a1</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_eq_zero</span></span> → <span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_formula_c_alt">cubic_formula_c_alt</a> f</span> a1</span> b</span> c</span> d</span> a_ne_zero</span> int_quantity_eq_zero</span></span> → <span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/cubic.html#cubic_subst">cubic_subst</a> f</span> a1</span> b</span> c</span> d</span> x</span> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field.html#myfld.zero">myfld.zero</a></span></span></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
 
 </main>
 
@@ -4453,10 +6576,10 @@ documentation.</p>
             <a href="/model_theory/basic.html">basic</a>
         </div>
         </details>
-        <details class="nav_sect" data-path="non_mathlib" >
+        <details class="nav_sect" data-path="non_mathlib" open>
             <summary>non_mathlib</summary>
             
-        <div class="nav_link ">
+        <div class="nav_link visible">
             <a href="/non_mathlib/cubic.html">cubic</a>
         </div>
         <div class="nav_link ">
