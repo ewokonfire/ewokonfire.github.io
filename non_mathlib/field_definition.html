@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/pygments.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>non_mathlib.field_definition - mathlib docs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+
+    <meta name="og:title" content="non_mathlib.field_definition - mathlib docs">
+    <meta name="og:site_name" content="mathlib for Lean - API documentation">
+    <meta name="og:description" content="">
+    <meta name="og:image" content="/meta-og.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="non_mathlib.field_definition - mathlib docs">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="/meta-twitter.png">
+</head>
+
+<body>
+
+<input id="nav_toggle" type="checkbox">
+
+<header>
+    <h1><label for="nav_toggle"></label><a href="https://leanprover-community.github.io">mathlib</a>
+        <span>documentation</span></h1>
+    <p class="header_filename break_within"><span class="name">non_mathlib</span>.<span class="name">field_definition</span></p>
+    <form action="https://google.com/search" method="get" id="search_form">
+        <input type="hidden" name="sitesearch" value="https://leanprover-community.github.io/mathlib_docs">
+        <input type="text" name="q" autocomplete="off">
+        <button>Google site search</button>
+    </form>
+</header>
+
+<nav class="internal_nav">
+<h3><a class="break_within" href="#top"><span class="name">non_mathlib</span>.<span class="name">field_definition</span></a></h3>
+
+<p class="gh_nav_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean">source</a></p>
+
+<div class="imports">
+    <details>
+        <summary>Imports</summary>
+        <ul>
+            <li><a href="/init/default.html">
+                init.default</a></li>
+        </ul>
+    </details>
+    <details>
+        <summary>Imported by</summary>
+        <ul>
+            <li><a href="/non_mathlib/cubic.html">
+                non_mathlib.cubic</a></li>
+        
+            <li><a href="/non_mathlib/field_results.html">
+                non_mathlib.field_results</a></li>
+        
+            <li><a href="/non_mathlib/numbers.html">
+                non_mathlib.numbers</a></li>
+        
+            <li><a href="/non_mathlib/quadratic.html">
+                non_mathlib.quadratic</a></li>
+        
+            <li><a href="/non_mathlib/quartic.html">
+                non_mathlib.quartic</a></li>
+        
+            <li><a href="/non_mathlib/roots.html">
+                non_mathlib.roots</a></li>
+        </ul>
+    </details>
+</div>
+
+
+    <div class="nav_link"><a class="break_within" href="#distrib_simp"><span class="name">distrib_simp</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#distrib_simp_alt"><span class="name">distrib_simp_alt</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#equal_ne_zero"><span class="name">equal_ne_zero</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#myfld"><span class="name">myfld</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#add_assoc"><span class="name">add_assoc</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#add_comm"><span class="name">add_comm</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#add_negate_simp"><span class="name">add_negate_simp</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#add_negate_simp_alt"><span class="name">add_negate_simp_alt</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#mul_assoc"><span class="name">mul_assoc</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#mul_comm"><span class="name">mul_comm</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#mul_reciprocal"><span class="name">mul_reciprocal</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#one_mul"><span class="name">one_mul</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#one_mul_simp"><span class="name">one_mul_simp</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#zero_add"><span class="name">zero_add</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#zero_simp"><span class="name">zero_simp</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#simp_mul_one"><span class="name">simp_mul_one</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#simp_zero"><span class="name">simp_zero</span></a></div>
+
+    <div class="nav_link"><a class="break_within" href="#square"><span class="name">square</span></a></div>
+
+</nav>
+
+<main>
+    <a id="top"></a>
+    
+
+    
+        
+        
+<div class="decl" id="myfld">
+<div class="structure">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L1">source</a></div>
+
+
+    <div class="attributes">@[class]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">structure</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#myfld"><span class="name">myfld</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">Type</span></div>
+</div>
+
+
+    <ul class="structure_fields" id="myfld.mk">
+        
+            
+            <li class="structure_field" id="myfld.add">add : <span class="fn">f → <span class="fn">f → f</span></span></li>
+        
+            
+            <li class="structure_field" id="myfld.mul">mul : <span class="fn">f → <span class="fn">f → f</span></span></li>
+        
+            
+            <li class="structure_field" id="myfld.negate">negate : <span class="fn">f → f</span></li>
+        
+            
+            <li class="structure_field" id="myfld.zero">zero : <span class="fn">f</span></li>
+        
+            
+            <li class="structure_field" id="myfld.reciprocal">reciprocal : <span class="fn">Π (x : f), <span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field_definition.html#myfld.zero">myfld.zero</a></span> → f</span></span></li>
+        
+            
+            <li class="structure_field" id="myfld.one">one : <span class="fn">f</span></li>
+        
+            
+            <li class="structure_field" id="myfld.add_assoc">add_assoc : <span class="fn">∀ (x y z : f), <span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> <span class="fn">(y <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> z)</span></span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> y</span> <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> z</span></span></span></li>
+        
+            
+            <li class="structure_field" id="myfld.mul_assoc">mul_assoc : <span class="fn">∀ (x y z : f), <span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(y <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> z)</span></span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> y</span> <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> z</span></span></span></li>
+        
+            
+            <li class="structure_field" id="myfld.add_comm">add_comm : <span class="fn">∀ (x y : f), <span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> y</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn">y <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> x</span></span></span></li>
+        
+            
+            <li class="structure_field" id="myfld.mul_comm">mul_comm : <span class="fn">∀ (x y : f), <span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> y</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn">y <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> x</span></span></span></li>
+        
+            
+            <li class="structure_field" id="myfld.add_zero">add_zero : <span class="fn">∀ (x : f), <span class="fn">x <a href="/init/core.html#eq" title="eq">=</a> <span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> <a href="/non_mathlib/field_definition.html#myfld.zero">myfld.zero</a></span></span></span></li>
+        
+            
+            <li class="structure_field" id="myfld.mul_one">mul_one : <span class="fn">∀ (x : f), <span class="fn">x <a href="/init/core.html#eq" title="eq">=</a> <span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> <a href="/non_mathlib/field_definition.html#myfld.one">myfld.one</a></span></span></span></li>
+        
+            
+            <li class="structure_field" id="myfld.add_negate">add_negate : <span class="fn">∀ (x : f), <span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field_definition.html#myfld.negate" title="myfld.negate">.-</a> x</span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field_definition.html#myfld.zero">myfld.zero</a></span></span></li>
+        
+            
+            <li class="structure_field" id="myfld.mul_reciprocal">mul_reciprocal : <span class="fn">∀ (x : f) (proof : <span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field_definition.html#myfld.zero">myfld.zero</a>)</span>, <span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field_definition.html#myfld.reciprocal">myfld.reciprocal</a> x</span> proof)</span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field_definition.html#myfld.one">myfld.one</a></span></span></li>
+        
+            
+            <li class="structure_field" id="myfld.distrib">distrib : <span class="fn">∀ (x y z : f), <span class="fn"><span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> z</span> <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> <span class="fn">y <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> z</span></span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn">(x <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> y)</span> <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> z</span></span></span></li>
+        
+            
+            <li class="structure_field" id="myfld.zero_distinct_one">zero_distinct_one : <span class="fn"><a href="/non_mathlib/field_definition.html#myfld.one">myfld.one</a> <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field_definition.html#myfld.zero">myfld.zero</a></span></li>
+        
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="square">
+<div class="def">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L23">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">def</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#square"><span class="name">square</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">f → f</span></div>
+</div>
+
+
+
+
+
+
+
+
+    <details>
+        <summary>Equations</summary>
+        <ul class="equations">
+            
+                <li class="equation"><span class="fn"><span class="fn"><span class="fn"><a href="/non_mathlib/field_definition.html#square">square</a> f</span> x</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> x</span></span></li>
+            
+        </ul>
+    </details>
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="add_comm">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L26">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#add_comm"><span class="name">add_comm</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x y : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> y</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn">y <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> x</span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="one_mul_simp">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L31">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#one_mul_simp"><span class="name">one_mul_simp</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><a href="/non_mathlib/field_definition.html#myfld.one">myfld.one</a> <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> x</span> <a href="/init/core.html#eq" title="eq">=</a> x</span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="add_assoc">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L37">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#add_assoc"><span class="name">add_assoc</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x y z : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> y</span> <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> z</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> <span class="fn">(y <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> z)</span></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="mul_comm">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L42">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#mul_comm"><span class="name">mul_comm</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x y : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> y</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn">y <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> x</span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="mul_assoc">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L47">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#mul_assoc"><span class="name">mul_assoc</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x y z : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> y</span> <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> z</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(y <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> z)</span></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="zero_add">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L52">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#zero_add"><span class="name">zero_add</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn">x <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><a href="/non_mathlib/field_definition.html#myfld.zero">myfld.zero</a> <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> x</span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="zero_simp">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L58">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#zero_simp"><span class="name">zero_simp</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> <a href="/non_mathlib/field_definition.html#myfld.zero">myfld.zero</a></span> <a href="/init/core.html#eq" title="eq">=</a> x</span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="simp_zero">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L63">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#simp_zero"><span class="name">simp_zero</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><a href="/non_mathlib/field_definition.html#myfld.zero">myfld.zero</a> <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> x</span> <a href="/init/core.html#eq" title="eq">=</a> x</span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="distrib_simp">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L68">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#distrib_simp"><span class="name">distrib_simp</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x y z : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn">(x <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> y)</span> <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> z</span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> z</span> <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> <span class="fn">y <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> z</span></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="distrib_simp_alt">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L73">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#distrib_simp_alt"><span class="name">distrib_simp_alt</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x y z : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn">(y <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> z)</span></span> <a href="/init/core.html#eq" title="eq">=</a> <span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> y</span> <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> <span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> z</span></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="one_mul">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L79">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#one_mul"><span class="name">one_mul</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><a href="/non_mathlib/field_definition.html#myfld.one">myfld.one</a> <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> x</span> <a href="/init/core.html#eq" title="eq">=</a> x</span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="simp_mul_one">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L84">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#simp_mul_one"><span class="name">simp_mul_one</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> <a href="/non_mathlib/field_definition.html#myfld.one">myfld.one</a></span> <a href="/init/core.html#eq" title="eq">=</a> x</span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="add_negate_simp">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L89">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#add_negate_simp"><span class="name">add_negate_simp</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> <span class="fn"> <a href="/non_mathlib/field_definition.html#myfld.negate" title="myfld.negate">.-</a> x</span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field_definition.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="add_negate_simp_alt">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L94">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#add_negate_simp_alt"><span class="name">add_negate_simp_alt</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn"><span class="fn"> <a href="/non_mathlib/field_definition.html#myfld.negate" title="myfld.negate">.-</a> x</span> <a href="/non_mathlib/field_definition.html#myfld.add" title="myfld.add">.+</a> x</span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field_definition.html#myfld.zero">myfld.zero</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="mul_reciprocal">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L99">source</a></div>
+
+
+    <div class="attributes">@[simp]</div>
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#mul_reciprocal"><span class="name">mul_reciprocal</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x : f)</span></span>
+    <span class="decl_args"><span class="fn">(proof : x <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field_definition.html#myfld.zero">myfld.zero</a>)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn">x <a href="/non_mathlib/field_definition.html#myfld.mul" title="myfld.mul">.*</a> <span class="fn"><span class="fn">(<a href="/non_mathlib/field_definition.html#myfld.reciprocal">myfld.reciprocal</a> x</span> proof)</span></span> <a href="/init/core.html#eq" title="eq">=</a> <a href="/non_mathlib/field_definition.html#myfld.one">myfld.one</a></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+    
+        
+        
+<div class="decl" id="equal_ne_zero">
+<div class="theorem">
+
+<div class="gh_link"><a href="https://github.com/leanprover-community/mathlib/blob/master/src/non_mathlib/field_definition.lean#L105">source</a></div>
+
+
+
+<div class="decl_header">
+    
+
+<span class="decl_kind">theorem</span>
+<span class="decl_name"><a class="break_within" href="/non_mathlib/field_definition.html#equal_ne_zero"><span class="name">equal_ne_zero</span></a></span>
+
+    <span class="decl_args"><span class="fn">(f : Type)</span></span>
+    <span class="impl_arg"><span class="decl_args"><span class="fn">[<a href="/non_mathlib/field_definition.html#myfld">myfld</a> f]</span></span></span>
+    <span class="decl_args"><span class="fn">(x y : f)</span></span>&nbsp;<span class="decl_args">:</span>
+<div class="decl_type"><span class="fn"><span class="fn">x <a href="/init/core.html#eq" title="eq">=</a> y</span> → <span class="fn"><span class="fn">x <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field_definition.html#myfld.zero">myfld.zero</a></span> → <span class="fn">y <a href="/init/logic.html#ne" title="ne">≠</a> <a href="/non_mathlib/field_definition.html#myfld.zero">myfld.zero</a></span></span></span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+    
+
+
+</main>
+
+<nav class="nav">
+
+
+<h3>Library</h3>
+        <h4>core</h4>
+            
+        <details class="nav_sect" data-path="non_mathlib" >
+            <summary>non_mathlib</summary>
+            
+        <div class="nav_link ">
+            <a href="/non_mathlib/cubic.html">cubic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/field.html">field</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quadratic.html">quadratic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quartic.html">quartic</a>
+        </div>
+	</details>
+</nav>
+
+
+<script>
+MathJax = {
+    tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+    },
+    options: {
+        skipHtmlTags: [
+            'script', 'noscript', 'style', 'textarea', 'pre',
+            'code', 'annotation', 'annotation-xml',
+            'decl', 'decl_meta', 'attributes', 'decl_args', 'decl_header', 'decl_name',
+            'decl_type', 'equation', 'equations', 'structure_field', 'structure_fields',
+            'constructor', 'constructors', 'instances'
+        ],
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process',
+    },
+};
+
+siteRoot = "/";
+</script>
+<script src="/add_commit.js"></script>
+<script src="/nav.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html></main>
+
+<nav class="nav">
+
+
+<h3>Library</h3>
+        <h4>core</h4>
+            
+        <details class="nav_sect" data-path="non_mathlib" >
+            <summary>non_mathlib</summary>
+            
+        <div class="nav_link ">
+            <a href="/non_mathlib/cubic.html">cubic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/field.html">field</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quadratic.html">quadratic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quartic.html">quartic</a>
+        </div>
+	</details>
+</nav>
+
+
+<script>
+MathJax = {
+    tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+    },
+    options: {
+        skipHtmlTags: [
+            'script', 'noscript', 'style', 'textarea', 'pre',
+            'code', 'annotation', 'annotation-xml',
+            'decl', 'decl_meta', 'attributes', 'decl_args', 'decl_header', 'decl_name',
+            'decl_type', 'equation', 'equations', 'structure_field', 'structure_fields',
+            'constructor', 'constructors', 'instances'
+        ],
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process',
+    },
+};
+
+siteRoot = "/";
+</script>
+<script src="/add_commit.js"></script>
+<script src="/nav.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html></main>
+
+<nav class="nav">
+
+
+<h3>Library</h3>
+        <h4>core</h4>
+            
+        <details class="nav_sect" data-path="non_mathlib" >
+            <summary>non_mathlib</summary>
+            
+        <div class="nav_link ">
+            <a href="/non_mathlib/cubic.html">cubic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/field.html">field</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quadratic.html">quadratic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quartic.html">quartic</a>
+        </div>
+	</details>
+</nav>
+
+
+<script>
+MathJax = {
+    tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+    },
+    options: {
+        skipHtmlTags: [
+            'script', 'noscript', 'style', 'textarea', 'pre',
+            'code', 'annotation', 'annotation-xml',
+            'decl', 'decl_meta', 'attributes', 'decl_args', 'decl_header', 'decl_name',
+            'decl_type', 'equation', 'equations', 'structure_field', 'structure_fields',
+            'constructor', 'constructors', 'instances'
+        ],
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process',
+    },
+};
+
+siteRoot = "/";
+</script>
+<script src="/add_commit.js"></script>
+<script src="/nav.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html></main>
+
+<nav class="nav">
+
+
+<h3>Library</h3>
+        <h4>core</h4>
+            
+        <details class="nav_sect" data-path="non_mathlib" >
+            <summary>non_mathlib</summary>
+            
+        <div class="nav_link ">
+            <a href="/non_mathlib/cubic.html">cubic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/field.html">field</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quadratic.html">quadratic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quartic.html">quartic</a>
+        </div>
+	</details>
+</nav>
+
+
+<script>
+MathJax = {
+    tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+    },
+    options: {
+        skipHtmlTags: [
+            'script', 'noscript', 'style', 'textarea', 'pre',
+            'code', 'annotation', 'annotation-xml',
+            'decl', 'decl_meta', 'attributes', 'decl_args', 'decl_header', 'decl_name',
+            'decl_type', 'equation', 'equations', 'structure_field', 'structure_fields',
+            'constructor', 'constructors', 'instances'
+        ],
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process',
+    },
+};
+
+siteRoot = "/";
+</script>
+<script src="/add_commit.js"></script>
+<script src="/nav.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html></main>
+
+<nav class="nav">
+
+
+<h3>Library</h3>
+        <h4>core</h4>
+            
+        <details class="nav_sect" data-path="non_mathlib" >
+            <summary>non_mathlib</summary>
+            
+        <div class="nav_link ">
+            <a href="/non_mathlib/cubic.html">cubic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/field.html">field</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quadratic.html">quadratic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quartic.html">quartic</a>
+        </div>
+	</details>
+</nav>
+
+
+<script>
+MathJax = {
+    tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+    },
+    options: {
+        skipHtmlTags: [
+            'script', 'noscript', 'style', 'textarea', 'pre',
+            'code', 'annotation', 'annotation-xml',
+            'decl', 'decl_meta', 'attributes', 'decl_args', 'decl_header', 'decl_name',
+            'decl_type', 'equation', 'equations', 'structure_field', 'structure_fields',
+            'constructor', 'constructors', 'instances'
+        ],
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process',
+    },
+};
+
+siteRoot = "/";
+</script>
+<script src="/add_commit.js"></script>
+<script src="/nav.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html></main>
+
+<nav class="nav">
+
+
+<h3>Library</h3>
+        <h4>core</h4>
+            
+        <details class="nav_sect" data-path="non_mathlib" >
+            <summary>non_mathlib</summary>
+            
+        <div class="nav_link ">
+            <a href="/non_mathlib/cubic.html">cubic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/field.html">field</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quadratic.html">quadratic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quartic.html">quartic</a>
+        </div>
+	</details>
+</nav>
+
+
+<script>
+MathJax = {
+    tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+    },
+    options: {
+        skipHtmlTags: [
+            'script', 'noscript', 'style', 'textarea', 'pre',
+            'code', 'annotation', 'annotation-xml',
+            'decl', 'decl_meta', 'attributes', 'decl_args', 'decl_header', 'decl_name',
+            'decl_type', 'equation', 'equations', 'structure_field', 'structure_fields',
+            'constructor', 'constructors', 'instances'
+        ],
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process',
+    },
+};
+
+siteRoot = "/";
+</script>
+<script src="/add_commit.js"></script>
+<script src="/nav.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html></main>
+
+<nav class="nav">
+
+
+<h3>Library</h3>
+        <h4>core</h4>
+            
+        <details class="nav_sect" data-path="non_mathlib" >
+            <summary>non_mathlib</summary>
+            
+        <div class="nav_link ">
+            <a href="/non_mathlib/cubic.html">cubic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/field.html">field</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quadratic.html">quadratic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quartic.html">quartic</a>
+        </div>
+	</details>
+</nav>
+
+
+<script>
+MathJax = {
+    tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+    },
+    options: {
+        skipHtmlTags: [
+            'script', 'noscript', 'style', 'textarea', 'pre',
+            'code', 'annotation', 'annotation-xml',
+            'decl', 'decl_meta', 'attributes', 'decl_args', 'decl_header', 'decl_name',
+            'decl_type', 'equation', 'equations', 'structure_field', 'structure_fields',
+            'constructor', 'constructors', 'instances'
+        ],
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process',
+    },
+};
+
+siteRoot = "/";
+</script>
+<script src="/add_commit.js"></script>
+<script src="/nav.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html></main>
+
+<nav class="nav">
+
+
+<h3>Library</h3>
+        <h4>core</h4>
+            
+        <details class="nav_sect" data-path="non_mathlib" >
+            <summary>non_mathlib</summary>
+            
+        <div class="nav_link ">
+            <a href="/non_mathlib/cubic.html">cubic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/field.html">field</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quadratic.html">quadratic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="/non_mathlib/quartic.html">quartic</a>
+        </div>
+	</details>
+</nav>
+
+
+<script>
+MathJax = {
+    tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+    },
+    options: {
+        skipHtmlTags: [
+            'script', 'noscript', 'style', 'textarea', 'pre',
+            'code', 'annotation', 'annotation-xml',
+            'decl', 'decl_meta', 'attributes', 'decl_args', 'decl_header', 'decl_name',
+            'decl_type', 'equation', 'equations', 'structure_field', 'structure_fields',
+            'constructor', 'constructors', 'instances'
+        ],
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process',
+    },
+};
+
+siteRoot = "/";
+</script>
+<script src="/add_commit.js"></script>
+<script src="/nav.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>
